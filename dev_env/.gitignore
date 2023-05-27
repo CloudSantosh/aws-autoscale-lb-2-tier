@@ -40,7 +40,8 @@ terraform.rc
 #ignore terrafor.lock.hcl
 .terraform.lock.hcl
 
-
+#ignoring project pem file
+webserver_content.md
 
 #ignoring reference file
 How *
