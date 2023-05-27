@@ -33,3 +33,8 @@ output "project_name" {
 output "region" {
   value = var.region
 }
+
+output "eip_for_nat" {
+  value = aws_eip.eip_for_nat.public_ip
+
+}
