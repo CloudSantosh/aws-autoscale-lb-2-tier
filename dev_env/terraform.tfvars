@@ -1,4 +1,4 @@
-region                  = "us-east-2"
+region                  = "us-west-2"
 project_name            = "AWS-ReStart-auto-scaling"
 vpc_cidr                = "192.168.0.0/16"
 public_subnet_az1_cidr  = "192.168.0.0/24"

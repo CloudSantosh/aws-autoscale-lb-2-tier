@@ -65,3 +65,14 @@ module "auto_scaling" {
   target_group_arn          = module.application_load_balancer.target_group_arn
 }
 
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  create rds server
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+module "rds_server" {
+  source                = "../modules/rds_server"
+  project_name          = module.vpc.project_name
+  private_subnet_az1_id = module.vpc.private_subnet_az1_id
+  private_subnet_az2_id = module.vpc.private_subnet_az2_id
+  rds_security_group_id = module.security_groups.rds_security_group_id
+
+}
